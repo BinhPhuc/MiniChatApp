@@ -1,8 +1,8 @@
 import socket
 import sys
 from utils.load_config import app_config as config
+from utils.messaging import send_message, receive_message
 import json
-import struct
 import threading
 
 port = config["server"]["port"]
@@ -30,40 +30,6 @@ class GreetingMessage(Message):
 class BroadcastMessage(Message):
     def __init__(self, from_user, msg):
         super().__init__("broadcast", from_user, None, msg)
-
-
-def send_message(sock, message):
-    payload = message.to_json().encode("utf-8")
-    payload_length = len(payload)
-    header = struct.pack(">I", payload_length)
-    sock.sendall(header + payload)
-
-
-def recvall(sock, n):
-    data = bytearray()
-    while len(data) < n:
-        packet = sock.recv(n - len(data))
-        if not packet:
-            return None
-        data.extend(packet)
-    return bytes(data)
-
-
-def receive_message(sock):
-    raw_header = recvall(sock, 4)
-    if not raw_header:
-        return None
-
-    payload_length = struct.unpack(">I", raw_header)[0]
-
-    raw_payload = recvall(sock, payload_length)
-    if not raw_payload:
-        return None
-
-    json_string = raw_payload.decode("utf-8")
-    message_dict = json.loads(json_string)
-
-    return message_dict
 
 
 def listen_for_messages(sock, username):

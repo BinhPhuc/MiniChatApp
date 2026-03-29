@@ -43,3 +43,16 @@
 2026-03-29 17:51:44,903 - utils.logger - INFO - Received from Bin: {'action': 'broadcast', 'from': 'Bin', 'to': None, 'message': 'xin chao'}
 2026-03-29 17:51:47,830 - utils.logger - INFO - Received from Khan: {'action': 'broadcast', 'from': 'Khan', 'to': None, 'message': 'a nhon'}
 2026-03-29 17:51:49,679 - utils.logger - INFO - Received from Thi: {'action': 'broadcast', 'from': 'Thi', 'to': None, 'message': 'sao z'}
+2026-03-29 18:28:35,087 - utils.logger - INFO - User Bin disconnected
+2026-03-29 18:28:36,051 - utils.logger - INFO - Server shutting down...
+2026-03-29 18:29:00,697 - utils.logger - INFO - Server is listening on port 6969
+2026-03-29 18:29:04,348 - utils.logger - INFO - New connection from ('127.0.0.1', 57088)
+2026-03-29 18:29:07,342 - utils.logger - INFO - User bin connected from ('127.0.0.1', 57088)
+2026-03-29 18:29:10,344 - utils.logger - INFO - New connection from ('127.0.0.1', 57104)
+2026-03-29 18:29:11,450 - utils.logger - INFO - User khan connected from ('127.0.0.1', 57104)
+2026-03-29 18:29:14,266 - utils.logger - INFO - New connection from ('127.0.0.1', 54828)
+2026-03-29 18:29:15,572 - utils.logger - INFO - User thi connected from ('127.0.0.1', 54828)
+2026-03-29 18:29:22,966 - utils.logger - INFO - Received from bin: {'action': 'broadcast', 'from': 'bin', 'to': None, 'message': 'a nhon a xe o'}
+2026-03-29 18:29:26,813 - utils.logger - INFO - Received from khan: {'action': 'broadcast', 'from': 'khan', 'to': None, 'message': 'to thich thi'}
+2026-03-29 18:29:28,852 - utils.logger - INFO - Received from thi: {'action': 'broadcast', 'from': 'thi', 'to': None, 'message': 'ua'}
+2026-03-29 18:29:30,929 - utils.logger - INFO - Received from thi: {'action': 'broadcast', 'from': 'thi', 'to': None, 'message': 'thiet ha'}
