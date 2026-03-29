@@ -2,8 +2,7 @@ import socket
 import sys
 from utils.load_config import app_config as config
 from utils.logger import app_logger as logger
-import json
-import struct
+from utils.messaging import send_message, receive_message
 import threading
 
 port = config["server"]["port"]
@@ -11,45 +10,6 @@ buffer_size = config["server"]["buffer_size"]
 
 clients = []
 clients_lock = threading.Lock()
-
-
-def recvall(sock, n):
-    data = bytearray()
-    while len(data) < n:
-        packet = sock.recv(n - len(data))
-        if not packet:
-            return None
-        data.extend(packet)
-    return bytes(data)
-
-
-def receive_message(sock):
-    raw_header = recvall(sock, 4)
-    if not raw_header:
-        return None
-
-    payload_length = struct.unpack(">I", raw_header)[0]
-
-    raw_payload = recvall(sock, payload_length)
-    if not raw_payload:
-        return None
-
-    json_string = raw_payload.decode("utf-8")
-    message_dict = json.loads(json_string)
-
-    return message_dict
-
-
-def send_message(sock, message_dict):
-    try:
-        payload = json.dumps(message_dict).encode("utf-8")
-        payload_length = len(payload)
-        header = struct.pack(">I", payload_length)
-        sock.sendall(header + payload)
-        return True
-    except Exception as e:
-        logger.error("Error sending message: %s", e)
-        return False
 
 
 def broadcast_message(message_dict, sender_conn=None):
