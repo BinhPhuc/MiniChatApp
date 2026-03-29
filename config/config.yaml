@@ -1,0 +1,4 @@
+server:
+  port: 6969
+  host: localhost
+  buffer_size: 1024 # 4069

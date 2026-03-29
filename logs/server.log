@@ -1,0 +1,45 @@
+2026-03-29 17:06:13,277 - logger - INFO - Connected by ('127.0.0.1', 43284)
+2026-03-29 17:09:51,902 - logger - INFO - Connected by ('127.0.0.1', 52206)
+2026-03-29 17:09:53,792 - logger - INFO - User binh connected to server
+2026-03-29 17:15:21,816 - logger - INFO - Server is listening on port 6969
+2026-03-29 17:15:31,124 - logger - INFO - User binh connected to server
+2026-03-29 17:15:45,878 - logger - INFO - Received message: {'action': 'broadcast', 'from': 'binh', 'to': None, 'message': 'hihi'}
+2026-03-29 17:21:51,666 - logger - INFO - Server is listening on port 6969
+2026-03-29 17:21:56,302 - logger - INFO - Connected by ('127.0.0.1', 57596)
+2026-03-29 17:22:08,224 - logger - ERROR - Could not bind to any address.
+2026-03-29 17:22:11,936 - logger - ERROR - Could not bind to any address.
+2026-03-29 17:22:19,042 - logger - ERROR - Could not bind to any address.
+2026-03-29 17:22:39,856 - logger - ERROR - Could not bind to any address.
+2026-03-29 17:22:55,594 - logger - ERROR - Could not bind to any address.
+2026-03-29 17:23:41,238 - logger - INFO - Server is listening on port 6969
+2026-03-29 17:23:47,500 - logger - INFO - Server is listening on port 6969
+2026-03-29 17:23:55,806 - logger - INFO - User Binh connected to server
+2026-03-29 17:24:07,536 - logger - INFO - Received message: {'action': 'broadcast', 'from': 'Binh', 'to': None, 'message': 'hi'}
+2026-03-29 17:24:15,035 - logger - INFO - Received message: {'action': 'broadcast', 'from': 'Binh', 'to': None, 'message': 'co ai o day khong'}
+2026-03-29 17:24:36,265 - logger - INFO - Received message: {'action': 'broadcast', 'from': 'Binh', 'to': None, 'message': 'hi'}
+2026-03-29 17:24:40,023 - logger - INFO - User Binh disconnected from server
+2026-03-29 17:32:44,235 - logger - INFO - Server is listening on port 6969
+2026-03-29 17:32:46,219 - logger - INFO - New connection from ('127.0.0.1', 47480)
+2026-03-29 17:32:48,759 - logger - INFO - User binh connected from ('127.0.0.1', 47480)
+2026-03-29 17:32:53,915 - logger - INFO - New connection from ('127.0.0.1', 44028)
+2026-03-29 17:32:56,142 - logger - INFO - User khanh connected from ('127.0.0.1', 44028)
+2026-03-29 17:32:58,219 - logger - INFO - Received from khanh: {'action': 'broadcast', 'from': 'khanh', 'to': None, 'message': 'hihi'}
+2026-03-29 17:33:02,966 - logger - INFO - Received from binh: {'action': 'broadcast', 'from': 'binh', 'to': None, 'message': 'dit me may'}
+2026-03-29 17:33:07,391 - logger - INFO - Received from khanh: {'action': 'broadcast', 'from': 'khanh', 'to': None, 'message': 'j'}
+2026-03-29 17:33:12,088 - logger - INFO - User khanh disconnected
+2026-03-29 17:48:08,303 - logger - INFO - New connection from ('127.0.0.1', 36240)
+2026-03-29 17:48:14,825 - logger - INFO - User nhe nhi connected from ('127.0.0.1', 36240)
+2026-03-29 17:48:35,469 - logger - INFO - New connection from ('127.0.0.1', 56194)
+2026-03-29 17:48:42,128 - logger - INFO - User tu nguoi thay connected from ('127.0.0.1', 56194)
+2026-03-29 17:48:51,395 - logger - INFO - Received from tu nguoi thay: {'action': 'broadcast', 'from': 'tu nguoi thay', 'to': None, 'message': 'vit chay'}
+2026-03-29 17:49:03,006 - logger - INFO - Server shutting down...
+2026-03-29 17:51:17,253 - utils.logger - INFO - Server is listening on port 6969
+2026-03-29 17:51:20,913 - utils.logger - INFO - New connection from ('127.0.0.1', 48400)
+2026-03-29 17:51:22,974 - utils.logger - INFO - User Bin connected from ('127.0.0.1', 48400)
+2026-03-29 17:51:28,435 - utils.logger - INFO - New connection from ('127.0.0.1', 48410)
+2026-03-29 17:51:29,965 - utils.logger - INFO - User Khan connected from ('127.0.0.1', 48410)
+2026-03-29 17:51:33,414 - utils.logger - INFO - New connection from ('127.0.0.1', 55894)
+2026-03-29 17:51:38,602 - utils.logger - INFO - User Thi connected from ('127.0.0.1', 55894)
+2026-03-29 17:51:44,903 - utils.logger - INFO - Received from Bin: {'action': 'broadcast', 'from': 'Bin', 'to': None, 'message': 'xin chao'}
+2026-03-29 17:51:47,830 - utils.logger - INFO - Received from Khan: {'action': 'broadcast', 'from': 'Khan', 'to': None, 'message': 'a nhon'}
+2026-03-29 17:51:49,679 - utils.logger - INFO - Received from Thi: {'action': 'broadcast', 'from': 'Thi', 'to': None, 'message': 'sao z'}
